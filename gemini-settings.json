@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "fv-tools": {
+      "command": "/path/to/your/venv/bin/fv-mcp",
+      "args": [],
+      "env": {
+        "FV_MCP_JG_MODE":          "jg_batch",
+        "FV_MCP_JG_CMD":           "/tools/cadence/jasper/bin/jaspergold",
+        "FV_MCP_WORK_DIR":         "/project/fv/work",
+        "FV_MCP_LM_LICENSE_FILE":  "27000@your-license-server",
+        "FV_MCP_BRIDGE_TCL":       "/path/to/fv-mcp-server/tcl/bridge.tcl",
+        "FV_MCP_PROCS_DIR":        "/path/to/fv-mcp-server/tcl/procs",
+        "FV_MCP_DEBUG":            "0"
+      },
+      "cwd": "/project/fv",
+      "timeout": 600000,
+      "trust": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "fv-tools": {
+      "command": "/path/to/your/venv/bin/fv-mcp",
+      "args": [],
+      "env": {
+        "FV_MCP_JG_MODE":    "tclsh",
+        "FV_MCP_TCL_EXE":    "tclsh",
+        "FV_MCP_WORK_DIR":   "/tmp/fv-dev",
+        "FV_MCP_BRIDGE_TCL": "/path/to/fv-mcp-server/tcl/bridge.tcl",
+        "FV_MCP_PROCS_DIR":  "/path/to/fv-mcp-server/tcl/procs",
+        "FV_MCP_DEBUG":      "1"
+      },
+      "trust": true
+    }
+  }
+}
